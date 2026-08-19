@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumindo API Pública</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+   <!--API é uma interface de programação que permite que 2 softwares troquem dados e informações entre si de forma segura-->
+    <h1>Consumindo API Pública do GitHub</h1> 
+<body>
+    <h1>Dados do Usuário Pretendidos</h1>
+    <table class="table" id="dados-table"> <!--Aqui foi criada uma tabela com os dados Nome, Repositórios Públicos e Seguidores-->
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Repositórios Públicos</th>
+                <th>Seguidores</th>
+            </tr>
+        </thead>
+    </table>
+    <div class="busca-container"> <!--Esta divisão possui uma caixa de texto (input) e um botão para ser escrito o usuário 
+                                   do GitHub que deseja que apareça na tabela-->
+        <input type="text" id="input-usuario" placeholder="Digite o usuário do GitHub">
+        <button id="btn-buscar">Buscar Usuário</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+/* Reset básico para remover margens padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Corpo da página */
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Título principal */
+h1 {
+    margin-bottom: 24px;
+    color: #2c3e50;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Estilo do container da tabela */
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Cabeçalho da Tabela */
+.table thead {
+    background-color: #2b3137; /* Tom escuro parecido com o do GitHub */
+    color: #ffffff;
+}
+
+.table th {
+    padding: 16px 20px;
+    text-align: left;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Células da Tabela */
+.table td {
+    padding: 14px 20px;
+    border-bottom: 1px solid #eef2f5;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* Destaca a linha ao passar o mouse */
+.table tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+/* Remove a borda da última linha */
+.table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Container de busca abaixo da tabela */
+.busca-container {
+    margin-top: 24px;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.busca-container input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.busca-container input:focus {
+    border-color: #2b3137;
+}
+
+.busca-container button {
+    padding: 12px 20px;
+    background-color: #2b3137; /* Verde estilo botão do GitHub */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.busca-container button:hover {
+    background-color: #2b3137;
+}
